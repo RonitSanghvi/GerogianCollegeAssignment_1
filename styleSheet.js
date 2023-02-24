@@ -14,4 +14,8 @@ export const Styling = StyleSheet.create({
         width:'100%',
         padding: 10,
     },
+    fonts:{
+        justifyContent:'center',
+        alignItems:'center'
+    }
 });
