@@ -1,16 +1,19 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, ImageBackground, Text } from 'react-native'
 import { Styling } from '../styleSheet';
+import BGImage from '../assets/Georgian.webp'
 
 export default function Layout5() {
   return (
     <View style={Styling.container}>
         <View style={styles.view1}>
             <View style={[styles.view3, Styling.borderDesign]}></View>
-            <View style={[styles.view4, Styling.borderDesign]}></View>
+            <ImageBackground source={BGImage} style={[styles.view4, Styling.borderDesign]}></ImageBackground>
         </View>
         <View style={styles.view2}>
-            <View style={[styles.view5, Styling.borderDesign]}></View>
+            <View style={[styles.view5, Styling.borderDesign, Styling.fonts]}>
+                <Text style={{fontWeight:'bold', fontSize:16}}>Image Tag is used above.</Text>
+            </View>
             <View style={[styles.view6, Styling.borderDesign]}></View>
         </View>
     </View>
